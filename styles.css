@@ -1,0 +1,106 @@
+/* Apply a uniform box-sizing model across all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #121212; /* Dark background */
+  color: #E0E0E0; /* Light text */
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+h1, h2 {
+  color: #BB86FC; /* Light purple color for headings */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #BB86FC;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+nav ul li a:hover {
+  color: #FF0266;
+}
+
+main {
+  padding: 40px 0;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+input, button {
+  margin: 10px 0;
+  padding: 15px;
+  font-size: 1em;
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid #BB86FC;
+  border-radius: 5px;
+  background-color: #1E1E1E;
+  color: #ffffff;
+  transition: border-color 0.3s;
+}
+
+input:focus, button:focus {
+  border-color: #FF0266; /* Dark pink for focus */
+}
+
+button {
+  background-color: #BB86FC;
+  color: #121212;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #FF0266;
+}
+
+footer {
+  padding: 20px 0;
+  border-top: 1px solid #333;
+  text-align: center;
+}
